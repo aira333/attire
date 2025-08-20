@@ -29,9 +29,9 @@ class KYCFaceMatching:
         """detect face using Haar cascade with parameters"""
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         face_params = [
-            (1.1, 3, (30, 30)),  # More sensitive
-            (1.05, 3, (20, 20)), # Even more sensitive
-            (1.3, 5, (50, 50)),  # Less sensitive but more accurate
+            (1.1, 3, (30, 30)), 
+            (1.05, 3, (20, 20)), 
+            (1.3, 5, (50, 50)),  
         ]
         
         for scale, neighbors, min_size in face_params:
